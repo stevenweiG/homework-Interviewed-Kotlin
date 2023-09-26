@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //呼叫data package載入資料
-        val myDataset=Datasource().loadPictures() //List<Picture>
+        val myDataset=Datasource().loadPictures("book store",1) //List<Picture>
 
         val recyclerView=findViewById<RecyclerView>(R.id.recycler_View)
         recyclerView.adapter=ItemAdapter(this,myDataset)
