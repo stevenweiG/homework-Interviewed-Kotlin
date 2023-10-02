@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.gogolook.stevenhm1_kotlin.data.Picture
 
-class ItemAdapter (private val context:Context, private val dataset:List<Picture>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
+class ItemAdapter (private val context:Context, var dataset:List<Picture>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
 
     class ItemViewHolder(private val view:View):RecyclerView.ViewHolder(view){
 
